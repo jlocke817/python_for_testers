@@ -1,79 +1,17 @@
 # -*- coding: utf-8 -*-
-from selenium.webdriver.firefox.webdriver import WebDriver
-import unittest
+import pytest
 from data import Data
+from application2 import Application
 
-def is_alert_present(wd):
-    try:
-        wd.switch_to_alert().text
-        return True
-    except:
-        return False
 
-class add_contact(unittest.TestCase):
-    def setUp(self):
-        self.wd = WebDriver()
-        self.wd.implicitly_wait(60)
-    
-    def test_add_contact(self):
-        success = True
-        wd = self.wd
-        self.open_main_page(wd)
-        self.login(wd, username="admin", password="secret")
-        self.new_contact(wd)
-        self.create_contact(wd, Data(firstname = "Иван", lastname = "Грозный", nickname = "Царь", title = "Директор", company = "Рога и Копыта", home_phone = "123456789", mobile_phone = "234567891", email = "ivan@roga-kopyta.ru"))
-        self.logout(wd)
-        self.assertTrue(success)
+@pytest.fixture
+def app(request):
+    fixture = Application()
+    request.addfinalizer(fixture.destroy)
+    return fixture
 
-    def open_main_page(self, wd):
-        wd.get("http://localhost/addressbook/index.php")
 
-    def create_contact(self, wd, data):
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(data.firstname)
-        wd.find_element_by_name("lastname").click()
-        wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys(data.lastname)
-        wd.find_element_by_name("nickname").click()
-        wd.find_element_by_name("nickname").clear()
-        wd.find_element_by_name("nickname").send_keys(data.nickname)
-        wd.find_element_by_name("title").click()
-        wd.find_element_by_name("title").clear()
-        wd.find_element_by_name("title").send_keys(data.title)
-        wd.find_element_by_name("company").click()
-        wd.find_element_by_name("company").clear()
-        wd.find_element_by_name("company").send_keys(data.company)
-        wd.find_element_by_name("home").click()
-        wd.find_element_by_name("home").clear()
-        wd.find_element_by_name("home").send_keys(data.home_phone)
-        wd.find_element_by_name("mobile").click()
-        wd.find_element_by_name("mobile").clear()
-        wd.find_element_by_name("mobile").send_keys(data.mobile_phone)
-        wd.find_element_by_name("email").click()
-        wd.find_element_by_name("email").clear()
-        wd.find_element_by_name("email").send_keys(data.email)
-        wd.find_element_by_name("theform").click()
-        # submit creation
-        wd.find_element_by_xpath("//div[@id='content']/form/input[21]").click()
-
-    def logout(self, wd):
-        wd.find_element_by_link_text("Logout").click()
-
-    def new_contact(self, wd):
-        wd.find_element_by_link_text("add new").click()
-
-    def login(self, wd, username, password):
-        wd.find_element_by_name("user").click()
-        wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys("%s" % username)
-        wd.find_element_by_name("pass").click()
-        wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys("%s" % password)
-        wd.find_element_by_xpath("//form[@id='LoginForm']/input[3]").click()
-
-    def tearDown(self):
-        self.wd.quit()
-
-if __name__ == '__main__':
-    unittest.main()
+def test_add_contact(app):
+    app.login(username="admin", password="secret")
+    app.new_contact(Data(firstname = "Иван", lastname = "Грозный", nickname = "Царь", title = "Директор", company = "Рога и Копыта", home_phone = "123456789", mobile_phone = "234567891", email = "ivan@roga-kopyta.ru"))
+    app.logout()
