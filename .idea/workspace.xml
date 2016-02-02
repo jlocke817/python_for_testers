@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86af3cbc-8257-4d9f-9592-0b7196759add" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/add_contact.py" afterPath="$PROJECT_DIR$/test/add_contact.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application.py" afterPath="$PROJECT_DIR$/fixture/application.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application2.py" afterPath="$PROJECT_DIR$/fixture/application2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/data.py" afterPath="$PROJECT_DIR$/model/data.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/group.py" afterPath="$PROJECT_DIR$/model/group.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test_add_group.py" afterPath="$PROJECT_DIR$/test/test_add_group.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test_add_group2.py" afterPath="$PROJECT_DIR$/test/test_add_group2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fixture/application.py" afterPath="$PROJECT_DIR$/fixture/application.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_add_group2.py" afterPath="$PROJECT_DIR$/test/test_add_group2.py" />
     </list>
     <ignored path="python_for_testers.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,14 +24,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add_contact.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_add_group2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/test_add_group2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5491803">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_contact.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/add_contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6557377">
+            <state vertical-scroll-proportion="0.0">
               <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixture/application.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fixture/session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,6 +90,9 @@
         <option value="$PROJECT_DIR$/test_add_group2.py" />
         <option value="$PROJECT_DIR$/add_contact.py" />
         <option value="$PROJECT_DIR$/application2.py" />
+        <option value="$PROJECT_DIR$/fixture/session.py" />
+        <option value="$PROJECT_DIR$/fixture/application.py" />
+        <option value="$PROJECT_DIR$/test/test_add_group2.py" />
       </list>
     </option>
   </component>
@@ -175,7 +204,7 @@
       <recent name="$PROJECT_DIR$/fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in add_contact.py (1)">
+  <component name="RunManager" selected="Python tests.py.test in test_add_group2.py (1)">
     <configuration default="false" name="test_add_group" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -259,6 +288,30 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="testToRun" value="$PROJECT_DIR$/test/add_contact.py" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_add_group2.py (1)" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python_for_testers" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/test/test_add_group2.py" />
       <option name="keywords" value="" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
@@ -387,18 +440,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.test_add_group" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group2.py" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in add_contact.py" />
       <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in add_contact.py (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group2.py (1)" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in add_contact.py (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in add_contact.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group2.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_add_group" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group2.py (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in add_contact.py (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in add_contact.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_add_group2.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_add_group" />
       </list>
     </recent_temporary>
   </component>
@@ -416,9 +471,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_add_contact_py - 2016.02.01 at 14h 57m 16s.xml">
-      <configuration name="py.test in add_contact.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_add_contact_py - 2016.02.01 at 14h 58m 41s.xml">
       <configuration name="py.test in add_contact.py" configurationId="tests" />
     </history-entry>
@@ -445,6 +497,9 @@
     </history-entry>
     <history-entry file="py_test_in_add_contact_py_(1) - 2016.02.02 at 09h 15m 41s.xml">
       <configuration name="py.test in add_contact.py (1)" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_add_group2_py_(1) - 2016.02.02 at 09h 26m 13s.xml">
+      <configuration name="py.test in test_add_group2.py (1)" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -531,14 +586,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fixture/application.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fixture/application2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -551,14 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_group2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -581,11 +620,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/add_contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6557377">
+        <state vertical-scroll-proportion="0.0">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fixture/application.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_add_group2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5491803">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
